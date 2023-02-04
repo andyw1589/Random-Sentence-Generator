@@ -1,0 +1,43 @@
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#sentence {
+    font-size: 2rem;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+header {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    margin-bottom: 0.8rem;
+}
