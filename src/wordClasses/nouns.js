@@ -6,5 +6,9 @@ export const nouns = [
     "fruit",
     "grape",
     "orange",
-    "starfruit"
+    "starfruit",
+    "person",
+    "animal",
+    "cellphone",
+    "computer"
 ];

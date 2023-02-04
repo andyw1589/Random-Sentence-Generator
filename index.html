@@ -14,25 +14,27 @@
 
 <body>
     <div id="page-container">
-        <header class="header bg-light px-2">
-            random sentence generator
-        </header>
-        <main class="my-5">
-            <div id="sentence">
-                random sentence here
-            </div>
-            <button id="generate" type="button" class="btn btn-primary my-2"><span>generate!</span></button>
-            <form>
-                <label for="nouns">insert nouns:</label>
-                <textarea id="nouns" name="nouns" rows="4" cols="50" placeholder="enter comma-separated countable nouns here!"></textarea>
-                <label for="verbs">insert verbs:</label>
-                <textarea id="verbs" name="verbs" rows="4" cols="50" placeholder="enter comma-separated transitive verbs here!"></textarea>
-                <label for="adjectives">insert adjectives:</label>
-                <textarea id="adjectives" name="adjectives" rows="4" cols="50" placeholder="enter comma-separated adjectives here!"></textarea>
-                <label for="adverbs">insert adverbs:</label>
-                <textarea id="adverbs" name="adverbs" rows="4" cols="50" placeholder="enter comma-separated adverbs here!"></textarea>
-            </form>
-        </main>
+        <div id="content-wrap">
+            <header class="header bg-light px-2">
+                random sentence generator
+            </header>
+            <main class="my-5">
+                <div id="sentence" class="mx-5 px-2 border border-secondary rounded-2">
+                    random sentence here
+                </div>
+                <button id="generate" type="button" class="btn btn-primary my-3"><span>generate!</span></button>
+                <form>
+                    <label for="nouns">insert nouns:</label>
+                    <textarea id="nouns" name="nouns" rows="4" cols="50" placeholder="enter comma-separated countable nouns here!"></textarea>
+                    <label for="verbs">insert verbs:</label>
+                    <textarea id="verbs" name="verbs" rows="4" cols="50" placeholder="enter comma-separated transitive verbs here!"></textarea>
+                    <label for="adjectives">insert adjectives:</label>
+                    <textarea id="adjectives" name="adjectives" rows="4" cols="50" placeholder="enter comma-separated adjectives here!"></textarea>
+                    <label for="adverbs">insert adverbs:</label>
+                    <textarea id="adverbs" name="adverbs" rows="4" cols="50" placeholder="enter comma-separated adverbs here!"></textarea>
+                </form>
+            </main>
+        </div>
         <footer class="bg-light">
             graphic design is my passion
         </footer>

@@ -16,7 +16,9 @@ const adverb = () => choose([...adverbs, ...userWords.adverbs]);
 const nounPhrase = () => {
     const formats = [
         [determiner, noun],
-        [determiner, adjectivePhrase, noun]
+        [determiner, adjectivePhrase, noun],
+        [determiner, noun, relativeClause],
+        [determiner, adjectivePhrase, noun, relativeClause]
     ];
     const chosenFormat = choose(formats);
     const np = chosenFormat.map(constituent => constituent());
@@ -42,13 +44,29 @@ const adjectivePhrase = () => {
 const verbPhrase = () => {
     const formats = [
         [verb, nounPhrase],
-        [adverb, verb, nounPhrase]
+        [adverb, verb, nounPhrase],
+        [verb, nounPhrase, adverb]
     ];
     const chosenFormat = choose(formats);
     return chosenFormat.map(constituent => constituent()).join(' ');
 };
 
-export const sentence = userw => {
+const relativeClause = () => {
+    const formats = [
+        [verb],
+        [verbPhrase],
+        [nounPhrase, verb]
+    ];
+    const chosenFormat = choose(formats);
+    const rc = ["that", ...chosenFormat.map(constituent => constituent())];
+    return rc.join(' ');
+};
+
+const sentence = () => {
+    return nounPhrase() + " " + verbPhrase();
+}
+
+export const generateSentence = userw => {
     userWords = userw;
-    return nounPhrase() + " " + verbPhrase() + '.';
+    return sentence() + '.';
 };

@@ -2,5 +2,8 @@
 export const verbs = [
     "does",
     "has",
-    "is"
+    "is",
+    "carries",
+    "eats",
+    "bites"
 ];

@@ -1,4 +1,4 @@
-import { sentence } from "./generators.js";
+import { generateSentence } from "./generators.js";
 
 // split based on "," delimiter, but ALSO account for ", "
 const extractUserWords = userString => {
@@ -27,6 +27,6 @@ window.onload = () => {
             "adjectives" : extractUserWords(userAdjectives.value),
             "adverbs" : extractUserWords(userAdverbs.value)
         };
-        sentenceDiv.innerHTML = sentence(userWords);
+        sentenceDiv.innerHTML = generateSentence(userWords);
     });
 };
