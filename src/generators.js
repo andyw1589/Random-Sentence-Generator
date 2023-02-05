@@ -5,8 +5,10 @@ import { adverbs } from "./wordClasses/adverbs.js";
 
 let userWords;
 
+// helper function to choose a random element in a list
 const choose = list => list[Math.floor(Math.random() * list.length)];
 
+// constituent generators
 const noun = () => choose([...nouns, ...userWords.nouns]);
 const verb = () => choose([...verbs, ...userWords.verbs]);
 const adjective = () => choose([...adjectives, ...userWords.adjectives]);
@@ -64,7 +66,7 @@ const relativeClause = () => {
 
 const sentence = () => {
     return nounPhrase() + " " + verbPhrase();
-}
+};
 
 export const generateSentence = userw => {
     userWords = userw;
