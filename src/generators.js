@@ -14,6 +14,7 @@ const verb = () => choose([...verbs, ...userWords.verbs]);
 const adjective = () => choose([...adjectives, ...userWords.adjectives]);
 const determiner = () => choose(["a", "the", "this", "that"]);
 const adverb = () => choose([...adverbs, ...userWords.adverbs]);
+const preposition = () => choose(["on", "above", "below", "to the left of", "to the right of", "beside", "in front of", "behind"]);
 
 const nounPhrase = () => {
     const formats = [
@@ -64,8 +65,17 @@ const relativeClause = () => {
     return rc.join(' ');
 };
 
+const prepPhrase = () => {
+    return preposition() + " " + nounPhrase();
+}
+
 const sentence = () => {
-    return nounPhrase() + " " + verbPhrase();
+    const formats = [
+        [nounPhrase, verbPhrase],
+        [nounPhrase, verbPhrase, prepPhrase]
+    ];
+    const chosenFormat = choose(formats);
+    return chosenFormat.map(constituent => constituent()).join(' ');
 };
 
 export const generateSentence = userw => {

@@ -8,5 +8,11 @@ export const adjectives = [
     "violet",
     "purple",
     "good",
-    "bad"
+    "bad",
+    "great",
+    "horrendous",
+    "awful",
+    "awesome",
+    "lazy",
+    "boring"
 ];

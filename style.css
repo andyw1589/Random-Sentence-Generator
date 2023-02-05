@@ -1,5 +1,5 @@
 * {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Times New Roman";
 }
 
 #sentence {
@@ -46,10 +46,19 @@ main form {
 
 textarea {
     margin-bottom: 0.8rem;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     form {
         width: 75%;
+    }
+
+    textarea {
+        width: 100%;
     }
 }

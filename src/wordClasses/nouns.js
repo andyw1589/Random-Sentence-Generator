@@ -3,9 +3,12 @@ export const nouns = [
     "apple",
     "banana",
     "blueberry",
+    "burger",
     "fruit",
     "grape",
     "orange",
+    "pineapple",
+    "taco",
     "starfruit",
     "person",
     "animal",
@@ -25,5 +28,7 @@ export const nouns = [
     "fish",
     "whale",
     "cellphone",
-    "computer"
+    "computer",
+    "movie",
+    "TV"
 ];
