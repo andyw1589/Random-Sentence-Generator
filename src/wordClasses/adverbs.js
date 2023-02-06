@@ -1,5 +1,8 @@
 export const adverbs = [
     "really",
     "greatly",
-    "poorly"
+    "poorly",
+    "quickly",
+    "slowly",
+    "expertly"
 ];

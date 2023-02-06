@@ -30,5 +30,7 @@ export const nouns = [
     "cellphone",
     "computer",
     "movie",
-    "TV"
+    "TV",
+    "pro",
+    "noob"
 ];
