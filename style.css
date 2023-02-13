@@ -40,6 +40,10 @@ main form {
     flex-direction: column;
 }
 
+#generate {
+    align-self: center;
+}
+
 textarea {
     margin-bottom: 0.8rem;
     width: 600px;

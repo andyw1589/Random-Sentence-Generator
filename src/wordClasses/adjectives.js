@@ -14,5 +14,8 @@ export const adjectives = [
     "awful",
     "awesome",
     "lazy",
-    "boring"
+    "boring",
+    "suspicious",
+    "underpaid",
+    "impoverished"
 ];

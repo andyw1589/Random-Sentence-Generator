@@ -1,36 +1,90 @@
-// singular countable nouns only
-export const nouns = [
+// sort the nouns
+const food = [
     "apple",
     "banana",
     "blueberry",
     "burger",
+    "dragonfruit",
+    "durian fruit",
+    "eggroll",
     "fruit",
     "grape",
+    "ice cream cone",
     "orange",
     "pineapple",
+    "poutine",
     "taco",
     "starfruit",
-    "person",
+    "steamed ham",
+    "waffle",
+    "wrap"
+];
+
+const animals = [
+    "alligator",
     "animal",
-    "cat",
-    "dog",
-    "horse",
-    "cow",
-    "pig",
-    "chicken",
+    "ant",
+    "axolotl",
     "bird",
     "bug",
-    "insect",
-    "ant",
-    "spider",
-    "unicorn",
+    "bull",
+    "cat",
+    "cattle",
+    "chicken",
+    "clam",
+    "cow",
+    "crocodile",
+    "dinosaur",
+    "dog",
+    "donkey",
     "dolphin",
+    "dragon",
     "fish",
-    "whale",
+    "gorilla",
+    "horse",
+    "insect",
+    "monkey",
+    "mouse",
+    "pig",
+    "rat",
+    "spider",
+    "tardigrade",
+    "unicorn",
+    "whale"
+];
+
+const people = [
+    "boss",
+    "employee",
+    "doctor",
+    "imposter",
+    "lawyer",
+    "office worker",
+    "person",
+    "pro",
+    "professor",
+    "scientist",
+    "student",
+    "noob",
+    "teacher"
+];
+
+const objects = [
+    "backpack",
     "cellphone",
     "computer",
+    "gun",
     "movie",
-    "TV",
-    "pro",
-    "noob"
+    "remote",
+    "rifle",
+    "screen",
+    "TV"
+];
+
+// singular countable nouns only
+export const nouns = [
+    ...food,
+    ...animals,
+    ...people,
+    ...objects
 ];

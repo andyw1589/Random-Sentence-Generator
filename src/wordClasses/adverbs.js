@@ -4,5 +4,7 @@ export const adverbs = [
     "poorly",
     "quickly",
     "slowly",
-    "expertly"
+    "expertly",
+    "vigorously",
+    "vehemently"
 ];
